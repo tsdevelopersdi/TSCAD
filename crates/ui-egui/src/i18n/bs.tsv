@@ -1,6 +1,6 @@
-# TSCraft Bosnian interface catalog — original translations by Nine (@nine-codes) with Claude Code (AI-assisted).
+# TSCAD Bosnian interface catalog — original translations by Nine (@nine-codes) with Claude Code (AI-assisted).
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# Written from the meaning of TSCraft English strings; no proprietary translations copied.
+# Written from the meaning of TSCAD English strings; no proprietary translations copied.
 # Latin script, Ijekavian; the wording is shared with storytold/craft-i18n (locales/bs/cadcraft.tsv
 # and common.tsv). Not yet reviewed by a native speaker.
 # UTF-8: context<TAB>English source<TAB>Bosnian translation.
@@ -52,7 +52,7 @@
 	> Greater than	> Veće od
 	A variable name starts with a letter and has only letters, digits and _	Naziv varijable počinje slovom i sadrži samo slova, cifre i _
 	About	O programu
-	About TSCraft	O TSCraftu
+	About TSCAD	O TSCADu
 	Absolute	Apsolutno
 	Add Leader	Dodaj pokaznu liniju
 	Additional angles	Dodatni uglovi
@@ -114,7 +114,7 @@
 	ByBlock	PoBloku
 	ByColor	PoBoji
 	ByLayer	PoSloju
-	TSCraft Help	Pomoć za TSCraft
+	TSCAD Help	Pomoć za TSCAD
 	Cancel	Otkaži
 	Cartesian (x, y)	Kartezijske (x, y)
 	Center	Sredina
@@ -699,7 +699,7 @@
 	Quick Select...	Brzi odabir...
 	QuickCalc	Brzi kalkulator
 	QuickCalc Pick	Odabir za brzi kalkulator
-	Quit TSCraft	Zatvori TSCraft
+	Quit TSCAD	Zatvori TSCAD
 	Radius	Poluprečnik
 	Raster Image	Rasterska slika
 	Ray	Zraka
@@ -930,7 +930,7 @@
 	Specify insertion point	Navedite tačku umetanja
 	A drawing opened from a file keeps that file's format.	Crtež otvoren iz datoteke zadržava format te datoteke.
 	An array that would create more objects than this is refused.	Niz koji bi kreirao više objekata od ovoga se odbija.
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft čuva ove postavke, načine hvatanja objekata i prekidače za crtanje za vaš korisnički račun i vraća ih pri pokretanju.
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD čuva ove postavke, načine hvatanja objekata i prekidače za crtanje za vaš korisnički račun i vraća ih pri pokretanju.
 	Changes apply at once and are kept for next time.	Promjene se primjenjuju odmah i čuvaju za sljedeći put.
 	Command line history	Historija komandne linije
 	Copy as JSON	Kopiraj kao JSON
@@ -1176,7 +1176,7 @@
 @plural	{n} contributor	{n} saradnik|{n} saradnika|{n} saradnika
 	Drawing as bytes	Crtež kao bajtovi
 	Services	Usluge
-	Hide TSCraft	Sakrij TSCraft
+	Hide TSCAD	Sakrij TSCAD
 	Hide Others	Sakrij ostale
 	Accessibility	Pristupačnost
 	Show System Cursor	Prikaži sistemski kursor
@@ -1210,7 +1210,7 @@
 	X	X
 	Y	Y
 	B	B
-	TSCraft	TSCraft
+	TSCAD	TSCAD
 	More toolbar commands	Više naredbi trake s alatima
 menu	View	Prikaz
 menu	Draw	Crtaj
@@ -1222,7 +1222,7 @@ menu	Modify	Izmijeni
 	Query Texts	Upit o tekstovima
 	Analyze Shapes	Analiziraj oblike
 	Check for Updates…	Provjeri ažuriranja…
-	TSCraft is up to date.	TSCraft je ažuran.
+	TSCAD is up to date.	TSCAD je ažuran.
 	Could not check for updates.	Nije moguće provjeriti ažuriranja.
 	3D Mouse	3D miš
 	3D Mouse Navigation	Navigacija 3D mišem
@@ -1454,5 +1454,5 @@ menu	Modify	Izmijeni
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

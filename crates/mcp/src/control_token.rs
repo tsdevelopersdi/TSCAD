@@ -20,7 +20,7 @@ const TOKEN_BYTES: usize = 32;
 /// user's home; on Windows the local app-data directory. The file itself is created with
 /// owner-only permissions regardless.
 pub fn token_path(port: u16) -> io::Result<PathBuf> {
-    Ok(private_dir()?.join(format!("tscraft-control-{port}.token")))
+    Ok(private_dir()?.join(format!("tscad-control-{port}.token")))
 }
 
 /// Choose the Unix runtime directory, home cache, or temporary directory for an owner-only token file.

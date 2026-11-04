@@ -63,7 +63,7 @@ impl App {
         };
         if let Err(error) = result {
             if self.workspace_error.as_ref() != Some(&error) {
-                eprintln!("TSCraft workspace: {error}");
+                eprintln!("TSCAD workspace: {error}");
                 self.cad.set_status(format!("Workspace could not be saved: {error}"));
                 self.workspace_error = Some(error);
             }
@@ -211,7 +211,7 @@ fn restores_window() -> bool {
 fn window_options(restoring: bool) -> eframe::NativeOptions {
     eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
-            .with_title("TSCraft")
+            .with_title("TSCAD")
             .with_inner_size([1600.0, 1000.0])
             .with_min_inner_size([900.0, 560.0])
             .with_drag_and_drop(true)
@@ -235,7 +235,7 @@ fn window_options(restoring: bool) -> eframe::NativeOptions {
     }
 }
 
-const APP_ID: &str = "com.solusidayaindonesia.tscraft";
+const APP_ID: &str = "com.solusidayaindonesia.tscad";
 
 /// The key eframe saves the main window state under in its storage.
 const WINDOW_KEY: &str = "window";
@@ -253,7 +253,7 @@ fn app_icon() -> Option<egui::IconData> {
 }
 
 fn version_string() -> String {
-    format!("tscraft {}", cadcraft_engine::build_version())
+    format!("tscad {}", cadcraft_engine::build_version())
 }
 
 /// Parse CLI options (`--control`, `--sample`, files, `--version`), install logging and I/O hooks, build the services and app, and run eframe.
@@ -269,7 +269,7 @@ fn main() -> eframe::Result {
     #[cfg(not(target_arch = "wasm32"))]
     if let Some(done) = craft_update::self_update::finish(&cadcraft_ui_egui::UPDATE_APP, &std::env::args_os().skip(1).collect::<Vec<_>>()) {
         if let Err(e) = done {
-            eprintln!("TSCraft update helper failed: {e}");
+            eprintln!("TSCAD update helper failed: {e}");
             std::process::exit(1);
         }
         return Ok(());
@@ -348,7 +348,7 @@ fn main() -> eframe::Result {
         }));
     }
     eframe::run_native(
-        "TSCraft",
+        "TSCAD",
         options,
         Box::new(move |cc| {
             let mut app = CadApp::new(Session::empty(), services());
@@ -358,7 +358,7 @@ fn main() -> eframe::Result {
             }
             app.set_system_cursor_default(vars.system_cursor == Switch::On);
             if let Some(error) = &workspace_error {
-                eprintln!("TSCraft workspace: {error}");
+                eprintln!("TSCAD workspace: {error}");
                 app.set_status(error);
             }
             app.system_languages = vars.locale.map(|s| vec![s]).unwrap_or_else(|| sys_locale::get_locales().collect());

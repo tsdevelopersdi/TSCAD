@@ -67,8 +67,8 @@ pub const UI_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
     ("ui.dialog.dsettings", "Drafting Settings...", &[], None),
     #[cfg(not(target_arch = "wasm32"))]
     ("ui.updates.check", "Check for Updates…", &["Help", "Check for Updates…"], None),
-    ("ui.dialog.about", "About TSCraft", &["Help", "About TSCraft"], None),
-    ("ui.dialog.commands", "Command Reference", &["Help", "TSCraft Help"], Some("F1")),
+    ("ui.dialog.about", "About TSCAD", &["Help", "About TSCAD"], None),
+    ("ui.dialog.commands", "Command Reference", &["Help", "TSCAD Help"], Some("F1")),
     ("ui.toggle.history", "Command History", &["Window", "Command History"], Some("F2")),
     ("ui.cmdline.lines", "Command Line History Lines", &[], None),
     ("ui.cmdline.clear", "Clear Command History", &[], None),
@@ -76,7 +76,7 @@ pub const UI_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
     ("ui.dialog.find", "Find and Replace", &[], Some("Cmd+F")),
     ("ui.language", "Language", &[], None),
     ("ui.noop", "", &[], None),
-    ("ui.quit", "Quit TSCraft", &[], Some("Cmd+Q")),
+    ("ui.quit", "Quit TSCAD", &[], Some("Cmd+Q")),
 ];
 
 pub fn is_ui_command(id: &str) -> bool {

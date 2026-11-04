@@ -3,12 +3,12 @@
   <?ifndef HasCraftFontLicences ?>
   <?define HasCraftFontLicences=0 ?>
   <?endif?>
-  <Package Name="TSCraft" Manufacturer="Solusi Daya Indonesia" Version="$(var.Version)" UpgradeCode="119D7D76-0167-4A9E-8F37-09DA0235F68E" Scope="perUserOrMachine" Compressed="yes" Language="1033">
-    <SummaryInformation Description="TSCraft computer-aided design" Manufacturer="Solusi Daya Indonesia" />
+  <Package Name="TSCAD" Manufacturer="Solusi Daya Indonesia" Version="$(var.Version)" UpgradeCode="119D7D76-0167-4A9E-8F37-09DA0235F68E" Scope="perUserOrMachine" Compressed="yes" Language="1033">
+    <SummaryInformation Description="TSCAD computer-aided design" Manufacturer="Solusi Daya Indonesia" />
     <?include $(sys.SOURCEFILEDIR)install-policy.wxi?>
     <!-- Same-version upgrades let successive pre-releases of one X.Y.Z replace each other
          (MSI versions are numeric, so 1.2.3-rc.1 and 1.2.3-rc.2 are both 1.2.3). -->
-    <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of TSCraft is already installed." />
+    <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of TSCAD is already installed." />
     <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
 
     <Icon Id="CadcraftIcon.ico" SourceFile="$(var.IconPath)" />
@@ -19,7 +19,7 @@
 
     <StandardDirectory Id="ProgramFiles6432Folder">
       <Directory Id="CraftSuiteFolder" Name="Solusi Daya Indonesia">
-        <Directory Id="INSTALLFOLDER" Name="TSCraft" />
+        <Directory Id="INSTALLFOLDER" Name="TSCAD" />
       </Directory>
     </StandardDirectory>
     <StandardDirectory Id="ProgramMenuFolder" />
@@ -39,14 +39,14 @@
 
     <UIRef Id="CadcraftUI" />
 
-    <Feature Id="Main" Title="TSCraft" Level="1">
+    <Feature Id="Main" Title="TSCAD" Level="1">
       <?if $(var.HasCraftFontLicences) = 1 ?>
       <ComponentGroupRef Id="CraftFontLicences" />
       <?endif?>
       <ComponentGroupRef Id="CadcraftFiles" />
     </Feature>
-  <Property Id="CRAFT_OPTION_1_M" Secure="yes"><RegistrySearch Id="CRAFT_OPTION_1_MSearch" Root="HKLM" Key="Software\Solusi Daya Indonesia\TSCraft" Name="DesktopShortcut" Type="raw" />
-    </Property><SetProperty Id="PREVIOUSDESKTOPSHORTCUT" Action="CraftLoadOption1M" Value="[CRAFT_OPTION_1_M]" After="LaunchConditions" Sequence="both" Condition="ALLUSERS = 1" /><Property Id="CRAFT_OPTION_1_U" Secure="yes"><RegistrySearch Id="CRAFT_OPTION_1_USearch" Root="HKCU" Key="Software\Solusi Daya Indonesia\TSCraft" Name="DesktopShortcut" Type="raw" />
+  <Property Id="CRAFT_OPTION_1_M" Secure="yes"><RegistrySearch Id="CRAFT_OPTION_1_MSearch" Root="HKLM" Key="Software\Solusi Daya Indonesia\TSCAD" Name="DesktopShortcut" Type="raw" />
+    </Property><SetProperty Id="PREVIOUSDESKTOPSHORTCUT" Action="CraftLoadOption1M" Value="[CRAFT_OPTION_1_M]" After="LaunchConditions" Sequence="both" Condition="ALLUSERS = 1" /><Property Id="CRAFT_OPTION_1_U" Secure="yes"><RegistrySearch Id="CRAFT_OPTION_1_USearch" Root="HKCU" Key="Software\Solusi Daya Indonesia\TSCAD" Name="DesktopShortcut" Type="raw" />
     </Property><SetProperty Id="PREVIOUSDESKTOPSHORTCUT" Action="CraftLoadOption1U" Value="[CRAFT_OPTION_1_U]" After="CraftLoadOption1M" Sequence="both" Condition="ALLUSERS &lt;&gt; 1" /><SetProperty Id="PREVIOUSDESKTOPSHORTCUT" Action="CraftLoadLegacyOption1" Value="[CRAFT_OPTION_1_U]" After="CraftLoadOption1U" Sequence="both" Condition="ALLUSERS = 1 AND NOT PREVIOUSDESKTOPSHORTCUT AND CRAFT_OPTION_1_U" /></Package>
 
   <Fragment>
@@ -57,28 +57,28 @@
     <?endif?>
     <ComponentGroup Id="CadcraftFiles" Directory="INSTALLFOLDER">
       <Component Id="CadcraftApp" Guid="2AC18056-48DE-4079-AB79-4FDEF4FBB075">
-        <File Id="CadcraftExe" Source="$(var.BinDir)\tscraft.exe" KeyPath="yes">
-          <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuFolder" Name="TSCraft" Description="TSCraft computer-aided design" WorkingDirectory="INSTALLFOLDER" Advertise="yes" Icon="CadcraftIcon.ico" IconIndex="0" />
+        <File Id="CadcraftExe" Source="$(var.BinDir)\tscad.exe" KeyPath="yes">
+          <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuFolder" Name="TSCAD" Description="TSCAD computer-aided design" WorkingDirectory="INSTALLFOLDER" Advertise="yes" Icon="CadcraftIcon.ico" IconIndex="0" />
         </File>
 
-        <RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\tscraft.exe" Value="[#CadcraftExe]" Type="string" />
-        <RegistryValue Root="HKMU" Key="Software\Classes\Applications\tscraft.exe\shell\open\command" Value="&quot;[#CadcraftExe]&quot; &quot;%1&quot;" Type="string" />
-        <RegistryValue Root="HKMU" Key="Software\Classes\.dxf\OpenWithProgids" Name="TSCraft.Drawing" Value="" Type="string" />
-        <RegistryValue Root="HKMU" Key="Software\Classes\.dwg\OpenWithProgids" Name="TSCraft.Drawing" Value="" Type="string" />
-        <RegistryValue Root="HKMU" Key="Software\Classes\TSCraft.Drawing\shell\open\command" Value="&quot;[#CadcraftExe]&quot; &quot;%1&quot;" Type="string" />
-      <RegistryValue Root="HKMU" Key="Software\TSCraft" Name="InstallDir" Value="[INSTALLFOLDER]" Type="string" />
+        <RegistryValue Root="HKMU" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\tscad.exe" Value="[#CadcraftExe]" Type="string" />
+        <RegistryValue Root="HKMU" Key="Software\Classes\Applications\tscad.exe\shell\open\command" Value="&quot;[#CadcraftExe]&quot; &quot;%1&quot;" Type="string" />
+        <RegistryValue Root="HKMU" Key="Software\Classes\.dxf\OpenWithProgids" Name="TSCAD.Drawing" Value="" Type="string" />
+        <RegistryValue Root="HKMU" Key="Software\Classes\.dwg\OpenWithProgids" Name="TSCAD.Drawing" Value="" Type="string" />
+        <RegistryValue Root="HKMU" Key="Software\Classes\TSCAD.Drawing\shell\open\command" Value="&quot;[#CadcraftExe]&quot; &quot;%1&quot;" Type="string" />
+      <RegistryValue Root="HKMU" Key="Software\TSCAD" Name="InstallDir" Value="[INSTALLFOLDER]" Type="string" />
       </Component>
 
       <Component Id="CadcraftCli">
-        <File Id="CadcraftCliExe" Source="$(var.BinDir)\cadcraft-cli.exe" KeyPath="yes" />
+        <File Id="CadcraftCliExe" Source="$(var.BinDir)\tscad-cli.exe" KeyPath="yes" />
       </Component>
 
       <!-- Optional desktop shortcut, removed on uninstall. A non-advertised shortcut needs a registry
            key path, and one in a profile folder (DesktopFolder, even though ALLUSERS=1 makes it the
            Public desktop) must be under HKCU (ICE38, ICE43, ICE57). -->
       <Component Id="DesktopShortcut" Directory="DesktopFolder" Guid="76029CD7-EBDB-420F-AC34-FF0E82A99E32" Condition="DESKTOPSHORTCUT = &quot;1&quot;">
-        <Shortcut Id="DesktopShortcut" Name="TSCraft" Description="TSCraft computer-aided design" Target="[INSTALLFOLDER]tscraft.exe" WorkingDirectory="INSTALLFOLDER" Icon="CadcraftIcon.ico" IconIndex="0" />
-        <RegistryValue Root="HKMU" Key="Software\Solusi Daya Indonesia\TSCraft" Name="DesktopShortcut" Value="1" Type="string" KeyPath="yes" />
+        <Shortcut Id="DesktopShortcut" Name="TSCAD" Description="TSCAD computer-aided design" Target="[INSTALLFOLDER]tscad.exe" WorkingDirectory="INSTALLFOLDER" Icon="CadcraftIcon.ico" IconIndex="0" />
+        <RegistryValue Root="HKMU" Key="Software\Solusi Daya Indonesia\TSCAD" Name="DesktopShortcut" Value="1" Type="string" KeyPath="yes" />
       </Component>
     </ComponentGroup>
   </Fragment>

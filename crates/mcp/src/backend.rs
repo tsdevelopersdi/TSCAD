@@ -105,7 +105,7 @@ impl Remote {
         Err(std::io::Error::new(
             std::io::ErrorKind::TimedOut,
             format!(
-                "CADCraft was opened but its control port {} did not answer; if it was already open without the port, quit it and try again",
+                "TSCAD was opened but its control port {} did not answer; if it was already open without the port, quit it and try again",
                 self.addr
             ),
         ))
@@ -173,7 +173,7 @@ fn not_open(addr: &str, e: std::io::Error) -> std::io::Error {
     std::io::Error::new(
         e.kind(),
         format!(
-            "CADCraft is not answering at {addr} ({e}). Open CADCraft with its control port (`--control PORT` or CADCRAFT_CONTROL_PORT), then try again"
+            "TSCAD is not answering at {addr} ({e}). Open TSCAD with its control port (`--control PORT` or CADCRAFT_CONTROL_PORT), then try again"
         ),
     )
 }
@@ -185,7 +185,7 @@ fn launch_app(addr: &str) -> std::io::Result<()> {
         let ok = std::process::Command::new("open").args(["-a", "CADCraft", "--args", "--control", port]).status()?.success();
         if ok { Ok(()) } else { Err(std::io::Error::other("could not open CADCraft (is it in Applications?)")) }
     } else {
-        Err(std::io::Error::other(format!("CADCraft is not running; start it with `cadcraft --control {port}`")))
+        Err(std::io::Error::other(format!("TSCAD is not running; start it with `cadcraft --control {port}`")))
     }
 }
 
@@ -286,7 +286,7 @@ impl Backend for Remote {
         true
     }
     fn describe(&self) -> String {
-        format!("connected to CADCraft at {}", self.addr)
+        format!("connected to TSCAD at {}", self.addr)
     }
 }
 
@@ -448,7 +448,7 @@ impl Backend for Headless {
         false
     }
     fn describe(&self) -> String {
-        "headless CADCraft session".into()
+        "headless TSCAD session".into()
     }
 }
 

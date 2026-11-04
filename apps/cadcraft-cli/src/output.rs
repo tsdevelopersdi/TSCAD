@@ -67,7 +67,7 @@ impl<'a> Streams<'a> {
         if std::mem::replace(&mut self.gone, true) || e.kind() == std::io::ErrorKind::BrokenPipe {
             return;
         }
-        self.errln(format_args!("cadcraft-cli: can't write to stdout: {e}"));
+        self.errln(format_args!("tscad-cli: can't write to stdout: {e}"));
         self.failed = true;
     }
 }

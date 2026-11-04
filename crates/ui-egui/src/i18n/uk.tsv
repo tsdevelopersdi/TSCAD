@@ -1,6 +1,6 @@
-# TSCraft Ukrainian interface catalog — original translations by @dmatviichuk.
+# TSCAD Ukrainian interface catalog — original translations by @dmatviichuk.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # UTF-8: context<TAB>English source<TAB>Ukrainian translation.
 # Empty context = ordinary label; @plural = one|few|many forms with {n}.
 # Keep command IDs, keywords, technology/product names and user data unchanged.
@@ -52,7 +52,7 @@
 	> Greater than	> Більше ніж
 	A variable name starts with a letter and has only letters, digits and _	Ім'я змінної починається з літери й містить лише літери, цифри та _
 	About	Про програму
-	About TSCraft	Про TSCraft
+	About TSCAD	Про TSCAD
 	Absolute	Абсолютні
 	Add Leader	Додати виноску
 	Additional angles	Додаткові кути
@@ -115,7 +115,7 @@
 	ByBlock	За блоком
 	ByColor	За кольором
 	ByLayer	За шаром
-	TSCraft Help	Довідка TSCraft
+	TSCAD Help	Довідка TSCAD
 	Cancel	Скасувати
 	Cartesian (x, y)	Декартові (x, y)
 	Center	Центр
@@ -714,7 +714,7 @@
 	Quick Select...	Швидкий вибір...
 	QuickCalc	Калькулятор
 	QuickCalc Pick	Вибір для калькулятора
-	Quit TSCraft	Вийти з TSCraft
+	Quit TSCAD	Вийти з TSCAD
 	Radius	Радіус
 	Raster Image	Растрове зображення
 	Ray	Промінь
@@ -948,7 +948,7 @@
 # Options dialog (OPTIONS).
 	A drawing opened from a file keeps that file's format.	Креслення, відкрите з файлу, зберігає формат цього файлу.
 	An array that would create more objects than this is refused.	Масив, що створив би більше об'єктів, буде відхилено.
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft зберігає ці параметри, режими об'єктної прив'язки та перемикачі креслення для вашого облікового запису й відновлює їх під час запуску.
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD зберігає ці параметри, режими об'єктної прив'язки та перемикачі креслення для вашого облікового запису й відновлює їх під час запуску.
 	Changes apply at once and are kept for next time.	Зміни застосовуються одразу й зберігаються на наступний раз.
 	Command line history	Історія командного рядка
 	Copy as JSON	Копіювати як JSON
@@ -1223,7 +1223,7 @@
 @plural	{n} contributor	{n} учасник|{n} учасники|{n} учасників
 	Drawing as bytes	Креслення як байти
 	Services	Служби
-	Hide TSCraft	Приховати TSCraft
+	Hide TSCAD	Приховати TSCAD
 	Hide Others	Приховати інші
 	Accessibility	Спеціальні можливості
 	Show System Cursor	Показувати системний курсор
@@ -1368,7 +1368,7 @@
 	Customize	Налаштування інтерфейсу
 	Edit Command Aliases (PGP)...	Редагувати псевдоніми команд (PGP)...
 	Check for Updates…	Перевірити оновлення…
-	TSCraft is up to date.	Встановлено найновішу версію TSCraft.
+	TSCAD is up to date.	Встановлено найновішу версію TSCAD.
 	Could not check for updates.	Не вдалося перевірити оновлення.
 	Save changes to block "{name}"?	Зберегти зміни в блоці «{name}»?
 	Find All	Find All
@@ -1383,5 +1383,5 @@
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

@@ -1,4 +1,4 @@
-# Greek interface catalog for TSCraft. Original, AI-assisted translation by @Camthalion77 with ChatGPT.
+# Greek interface catalog for TSCAD. Original, AI-assisted translation by @Camthalion77 with ChatGPT.
 # context<TAB>English source<TAB>Greek translation. Preserve English keys and formatting.
 	  Cancel  	  Ακύρωση
 	  OK  	  Εντάξει
@@ -35,7 +35,7 @@
 	A drawing opened from a file keeps that file's format.	Ένα σχέδιο που ανοίγεται από αρχείο διατηρεί τη μορφή του αρχείου του.
 	A variable name starts with a letter and has only letters, digits and _	Το όνομα μιας μεταβλητής αρχίζει με γράμμα και περιέχει μόνο γράμματα, ψηφία και _
 	About	Πληροφορίες
-	About TSCraft	Πληροφορίες για το TSCraft
+	About TSCAD	Πληροφορίες για το TSCAD
 	Absolute	Απόλυτο
 	Accessibility	Προσβασιμότητα
 	Add	Προσθήκη
@@ -125,9 +125,9 @@
 	ByBlock	Κατά μπλοκ (ByBlock)
 	ByColor	Κατά χρώμα (ByColor)
 	ByLayer	Κατά επίπεδο (ByLayer)
-	TSCraft	TSCraft
-	TSCraft Help	Βοήθεια TSCraft
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	Το TSCraft αποθηκεύει τις προτιμήσεις, τις λειτουργίες έλξης αντικειμένων και τους διακόπτες σχεδίασης στον λογαριασμό σας και τις επαναφέρει στην εκκίνηση.
+	TSCAD	TSCAD
+	TSCAD Help	Βοήθεια TSCAD
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	Το TSCAD αποθηκεύει τις προτιμήσεις, τις λειτουργίες έλξης αντικειμένων και τους διακόπτες σχεδίασης στον λογαριασμό σας και τις επαναφέρει στην εκκίνηση.
 	Calibrate	Βαθμονόμηση
 	Calibrate 3D Mouse	Βαθμονόμηση ποντικιού 3Δ
 	Cancel	Ακύρωση
@@ -467,7 +467,7 @@
 	Hide All	Απόκρυψη όλων
 	Hide All Constraint Bars	Απόκρυψη όλων των γραμμών περιορισμών
 	Hide All Dynamic Dimensions	Απόκρυψη όλων των δυναμικών διαστάσεων
-	Hide TSCraft	Απόκρυψη TSCraft
+	Hide TSCAD	Απόκρυψη TSCAD
 	Hide Layer List	Απόκρυψη λίστας επιπέδων
 	Hide Objects	Απόκρυψη αντικειμένων
 	Hide Others	Απόκρυψη άλλων
@@ -810,7 +810,7 @@
 	Quick Select...	Γρήγορη επιλογή...
 	QuickCalc	Γρήγορη αριθμομηχανή (QuickCalc)
 	QuickCalc Pick	Επιλογή στη γρήγορη αριθμομηχανή
-	Quit TSCraft	Έξοδος από το TSCraft
+	Quit TSCAD	Έξοδος από το TSCAD
 	Radius	Ακτίνα
 	Raster Image	Εικόνα ψηφίδων (Raster Image)
 	Ray	Ημιευθεία (Ray)
@@ -1331,7 +1331,7 @@ menu	Draw	Σχεδίαση
 menu	Modify	Τροποποίηση
 menu	View	Προβολή
 	Check for Updates…	Έλεγχος για ενημερώσεις…
-	TSCraft is up to date.	Το TSCraft είναι ενημερωμένο.
+	TSCAD is up to date.	Το TSCAD είναι ενημερωμένο.
 	Could not check for updates.	Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις.
 	Find All	Find All
 	Find what:	Find what:
@@ -1345,5 +1345,5 @@ menu	View	Προβολή
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

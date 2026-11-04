@@ -64,9 +64,9 @@ fn convert_long_about() -> &'static str {
     })
 }
 
-/// cadcraft-cli: headless CADCraft
+/// tscad-cli: headless TSCAD
 #[derive(Parser)]
-#[command(name = "cadcraft-cli", version = cadcraft_engine::build_version(), arg_required_else_help = true)]
+#[command(name = "tscad-cli", version = cadcraft_engine::build_version(), arg_required_else_help = true)]
 pub(crate) struct Cli {
     #[command(subcommand)]
     pub(crate) command: Command,
@@ -113,7 +113,7 @@ pub(crate) struct ConvertArgs {
 
 /// The settings the desktop app reads from its environment, for the subcommands that draw or run
 /// commands. A variable is the flag's fallback; an empty one counts as unset, except
-/// `CADCRAFT_CONFIG_DIR`.
+/// `TSCAD_CONFIG_DIR`.
 #[derive(Args)]
 #[command(next_help_heading = "Settings")]
 pub(crate) struct Settings {
@@ -122,7 +122,7 @@ pub(crate) struct Settings {
     // Not RFC-0012 rule 1.7's "an empty variable counts as unset": an empty value is the
     // documented way to run with no settings folder (isolated runs, tests), and it predates the
     // CLI port. Keep it out of any blanket treatment of empty variables.
-    #[arg(long, value_name = "DIR", env = "CADCRAFT_CONFIG_DIR", value_parser = OsStringValueParser::new().map(PathBuf::from))]
+    #[arg(long, value_name = "DIR", env = "TSCAD_CONFIG_DIR", value_parser = OsStringValueParser::new().map(PathBuf::from))]
     pub(crate) config_dir: Option<PathBuf>,
     /// The font that replaces a missing one (FONTALT)
     #[arg(long, value_name = "FONT", env = "CADCRAFT_FONTALT")]
@@ -565,7 +565,7 @@ pub(crate) fn parse(args: &[OsString]) -> Result<Cli, clap::Error> {
     parse_with(command(|k| std::env::var_os(k)), args)
 }
 
-/// The command line. An empty or blank variable counts as unset, except `CADCRAFT_CONFIG_DIR`:
+/// The command line. An empty or blank variable counts as unset, except `TSCAD_CONFIG_DIR`:
 /// empty means no settings folder. `var` looks a variable up.
 fn command(var: impl Fn(&OsStr) -> Option<OsString> + Copy) -> clap::Command {
     let blank = move |a: clap::Arg| if a.get_id() == "config_dir" { a } else { blank_env_is_unset(a, var) };
@@ -575,11 +575,11 @@ fn command(var: impl Fn(&OsStr) -> Option<OsString> + Copy) -> clap::Command {
 /// [`parse`] with `cmd` from [`command`]; a bad value from a variable is a usage error naming the
 /// variable.
 fn parse_with(mut cmd: clap::Command, args: &[OsString]) -> Result<Cli, clap::Error> {
-    let argv = std::iter::once(OsString::from("cadcraft-cli")).chain(args.iter().cloned());
+    let argv = std::iter::once(OsString::from("tscad-cli")).chain(args.iter().cloned());
     let matches = match cmd.try_get_matches_from_mut(argv) {
         // `use_stderr`: a real error, not the help `-h` asked for (a retry would make it `--help`).
         Err(e) if e.use_stderr() && args.iter().take_while(|a| *a != "--").any(|a| *a == "--help" || *a == "-h") => {
-            let help = [OsString::from("cadcraft-cli"), args.first().cloned().unwrap_or_default(), OsString::from("--help")];
+            let help = [OsString::from("tscad-cli"), args.first().cloned().unwrap_or_default(), OsString::from("--help")];
             return Err(cmd.try_get_matches_from_mut(help).err().unwrap_or(e));
         }
         matches => matches.map_err(|e| name_env_vars(e, &cmd, args))?,
@@ -803,7 +803,7 @@ mod tests {
         for sub in cmd.get_subcommands().filter(|s| s.get_arguments().any(|a| a.get_id() == "fontalt")) {
             let env = |id: &str| sub.get_arguments().find(|a| a.get_id() == id).and_then(|a| a.get_env());
             assert_eq!((env("fontalt"), env("fontfallback")), (None, None), "{}", sub.get_name());
-            assert_eq!(env("config_dir"), Some(OsStr::new("CADCRAFT_CONFIG_DIR")), "{}", sub.get_name());
+            assert_eq!(env("config_dir"), Some(OsStr::new("TSCAD_CONFIG_DIR")), "{}", sub.get_name());
         }
     }
 

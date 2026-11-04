@@ -8,14 +8,14 @@
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 #![forbid(unsafe_code)]
 
-/// TSCraft as craft-update knows it, with its 128 px icon and accent colour: the update
+/// TSCAD as craft-update knows it, with its 128 px icon and accent colour: the update
 /// prompt shows both, and an AppImage's menu entry gets the icon.
 #[cfg(not(target_arch = "wasm32"))]
 pub const UPDATE_APP: craft_update::app::App = craft_update::app::App {
-    id: "tscraft",
-    name: "TSCraft",
+    id: "tscad",
+    name: "TSCAD",
     developer: "Solusi Daya Indonesia",
-    repo: "SolusiDayaIndonesia/tscraft",
+    repo: "SolusiDayaIndonesia/tscad",
     icon_png: Some(include_bytes!("../../../assets/app-icon/hicolor/128x128/apps/ai.storyteller.cadcraft.png")),
     accent: Some([0x3e, 0xa6, 0xe8]),
     ..craft_update::suite::CADCRAFT
@@ -603,7 +603,7 @@ impl CadApp {
     pub fn open_size_error(name: &str, len: u64) -> Option<String> {
         (len > Self::MAX_OPEN_BYTES).then(|| {
             format!(
-                "Open: {name} is {:.1} MB, larger than the {} MB TSCraft opens in the browser",
+                "Open: {name} is {:.1} MB, larger than the {} MB TSCAD opens in the browser",
                 len as f64 / 1048576.0,
                 Self::MAX_OPEN_BYTES >> 20
             )

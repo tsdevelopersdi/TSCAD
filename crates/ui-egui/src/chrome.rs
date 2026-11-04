@@ -72,8 +72,8 @@ pub fn title_and_toolbar(app: &mut CadApp, ui: &mut egui::Ui) {
             // The empty row moves the window; it goes first so later widgets take their own clicks.
             craft_window::title_bar::empty_area(ui, Rect::from_min_size(r.min, vec2(r.width(), title_h)));
             let title = match app.session.state() {
-                Ok(st) if !app.ui.start_tab => format!("TSCraft      {}{}", st.title, if st.title.contains('.') { "" } else { ".dwg" }),
-                _ => format!("TSCraft      {}", crate::tl!("Start")),
+                Ok(st) if !app.ui.start_tab => format!("TSCAD      {}{}", st.title, if st.title.contains('.') { "" } else { ".dwg" }),
+                _ => format!("TSCAD      {}", crate::tl!("Start")),
             };
             // Centred on the traffic lights' centre line (the row's middle): with the system font
             // the capitals' middle is the text box's middle, so no optical nudge.
@@ -535,7 +535,7 @@ pub fn start_page(app: &mut CadApp, ui: &mut egui::Ui) {
     let left = Rect::from_min_size(r.min, vec2(300.0, r.height()));
     p.rect_filled(left, 0.0, t.chrome_dark);
     p.rect_filled(Rect::from_min_max(pos2(left.right(), r.top()), r.max), 0.0, t.chrome);
-    p.text(pos2(left.left() + 34.0, left.top() + 70.0), egui::Align2::LEFT_CENTER, crate::tl!("TSCraft"), egui::FontId::proportional(28.0), t.text);
+    p.text(pos2(left.left() + 34.0, left.top() + 70.0), egui::Align2::LEFT_CENTER, crate::tl!("TSCAD"), egui::FontId::proportional(28.0), t.text);
     p.text(
         pos2(left.left() + 34.0, left.top() + 98.0),
         egui::Align2::LEFT_CENTER,
@@ -580,14 +580,14 @@ pub fn start_page(app: &mut CadApp, ui: &mut egui::Ui) {
         p.text(
             pos2(main.center().x, main.center().y),
             egui::Align2::CENTER_CENTER,
-            crate::tl!("Welcome to TSCraft"),
+            crate::tl!("Welcome to TSCAD"),
             egui::FontId::proportional(18.0),
             t.text,
         );
         p.text(
             pos2(main.center().x, main.center().y + 26.0),
             egui::Align2::CENTER_CENTER,
-            crate::tl!("Files you open in TSCraft appear here."),
+            crate::tl!("Files you open in TSCAD appear here."),
             crate::theme::body(),
             t.text_dim,
         );

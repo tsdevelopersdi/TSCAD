@@ -1,6 +1,6 @@
-# TSCraft Simplified Chinese interface catalog — original translations.
+# TSCAD Simplified Chinese interface catalog — original translations.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # UTF-8: context<TAB>English source<TAB>Chinese translation.
 # Empty context = ordinary label; @plural = one|other forms with {n}.
 # Command IDs, typed keywords, technology/product names and user data stay unchanged.
@@ -28,7 +28,7 @@
 	= Equals	= 等于
 	> Greater than	> 大于
 	About	关于
-	About TSCraft	关于 TSCraft
+	About TSCAD	关于 TSCAD
 	Absolute	绝对
 	Add Leader	添加引线
 	Align	对齐
@@ -84,7 +84,7 @@
 	ByBlock	ByBlock
 	ByColor	ByColor
 	ByLayer	ByLayer
-	TSCraft Help	TSCraft 帮助
+	TSCAD Help	TSCAD 帮助
 	Cancel	取消
 	Cartesian (x, y)	笛卡尔坐标 (x, y)
 	Center	中心
@@ -587,7 +587,7 @@
 	Quick Select Properties	快速选择特性
 	Quick Select...	快速选择...
 	QuickCalc	快速计算器
-	Quit TSCraft	退出 TSCraft
+	Quit TSCAD	退出 TSCAD
 	Radius	半径
 	Raster Image	光栅图像
 	Ray	射线
@@ -993,7 +993,7 @@
 @plural	{n} contributor	{n} 位贡献者|{n} 位贡献者
 	Drawing as bytes	字节形式的图形
 	Services	服务
-	Hide TSCraft	隐藏 TSCraft
+	Hide TSCAD	隐藏 TSCAD
 	Hide Others	隐藏其他人
 	Accessibility	辅助功能
 	Show System Cursor	显示系统光标
@@ -1097,7 +1097,7 @@
 	An array that would create more objects than this is refused.	将拒绝创建超出此对象数量的阵列。
 	Time-sensitive right-click: a quick click is Enter, holding opens the menu	时间敏感右键：快速点击相当于回车，按住不放打开菜单
 	Turned off, a right-click while a command runs always opens the shortcut menu.	关闭后，在命令运行期间右键单击总是打开快捷菜单。
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft 会为你的用户账号保留这些偏好设置、对象捕捉模式和绘图切换开关，并在启动时恢复它们。
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD 会为你的用户账号保留这些偏好设置、对象捕捉模式和绘图切换开关，并在启动时恢复它们。
 	Reset to Defaults	恢复默认设置
 	Copy as JSON	复制为 JSON
 	Reset keeps the interface language.	重置时会保留界面语言。
@@ -1219,7 +1219,7 @@
 	Reinitialize	重新初始化
 	Update Data Links	更新数据链接
 	Dim scale overall	全局标注比例
-	TSCraft	TSCraft
+	TSCAD	TSCAD
 	Enter	输入
 	Temporary track point	临时追踪点
 	Plot Window	窗口打印
@@ -1342,7 +1342,7 @@
 	US Survey Yard	美国测量码
 	US Survey Mile	美国测量英里
 	Check for Updates…	检查更新…
-	TSCraft is up to date.	TSCraft 已是最新版本。
+	TSCAD is up to date.	TSCAD 已是最新版本。
 	Could not check for updates.	无法检查更新。
 # Menu and command labels the October 2026 update missed (#1129).
 	Align Multileaders	对齐多重引线
@@ -1463,5 +1463,5 @@ menu	Dimension	标注
 menu	Draw	绘图
 menu	Modify	修改
 menu	View	视图
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

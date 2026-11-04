@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/app-icon/cadcraft-256.png" width="128" height="128" alt="TSCraft icon">
+  <img src="assets/app-icon/cadcraft-256.png" width="128" height="128" alt="TSCAD icon">
 </p>
 
-<h1 align="center">TSCraft</h1>
+<h1 align="center">TSCAD</h1>
 
 <p align="center">
   <b>Computer-aided design and drafting; an open-source, modern 2D and 3D CAD application, built in pure Rust.</b>

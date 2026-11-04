@@ -613,6 +613,36 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc652a48c352aef3ea3aed32080501cf3ef6ed5da78602a020c991775b0aff04"
 
 [[package]]
+name = "cadcraft"
+version = "0.17.0"
+dependencies = [
+ "cadcraft-engine",
+ "cadcraft-io",
+ "cadcraft-mcp",
+ "cadcraft-ui-egui",
+ "chrono",
+ "clap",
+ "craft-ui",
+ "craft-update",
+ "craft-window",
+ "eframe",
+ "egui",
+ "hidapi",
+ "log",
+ "muda",
+ "objc2-app-kit 0.3.2",
+ "rfd",
+ "ron",
+ "serde_json",
+ "sys-locale",
+ "thiserror 2.0.21",
+ "windows",
+ "winit",
+ "winresource",
+ "zbus",
+]
+
+[[package]]
 name = "cadcraft-cli"
 version = "0.17.0"
 dependencies = [
@@ -626,6 +656,7 @@ dependencies = [
  "same-file",
  "serde_json",
  "thiserror 2.0.21",
+ "winresource",
 ]
 
 [[package]]
@@ -4810,36 +4841,6 @@ dependencies = [
  "memchr",
  "nom 8.0.0",
  "petgraph",
-]
-
-[[package]]
-name = "tscraft"
-version = "0.17.0"
-dependencies = [
- "cadcraft-engine",
- "cadcraft-io",
- "cadcraft-mcp",
- "cadcraft-ui-egui",
- "chrono",
- "clap",
- "craft-ui",
- "craft-update",
- "craft-window",
- "eframe",
- "egui",
- "hidapi",
- "log",
- "muda",
- "objc2-app-kit 0.3.2",
- "rfd",
- "ron",
- "serde_json",
- "sys-locale",
- "thiserror 2.0.21",
- "windows",
- "winit",
- "winresource",
- "zbus",
 ]
 
 [[package]]

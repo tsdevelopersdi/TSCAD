@@ -1,6 +1,6 @@
-# TSCraft French interface catalog — original translations by @pechnikov2026-star.
+# TSCAD French interface catalog — original translations by @pechnikov2026-star.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # UTF-8: context<TAB>English source<TAB>French translation.
 # Empty context = ordinary label; @plural = one|other forms with {n}.
 # Command IDs, typed keywords, technology/product names and user data stay unchanged.
@@ -28,7 +28,7 @@
 	= Equals	= Égal à
 	> Greater than	> Supérieur à
 	About	À propos
-	About TSCraft	À propos de TSCraft
+	About TSCAD	À propos de TSCAD
 	Absolute	Absolu
 	Add Leader	Ajouter un repère
 	Align	Aligner
@@ -84,7 +84,7 @@
 	ByBlock	DuBloc
 	ByColor	Par couleur
 	ByLayer	DuCalque
-	TSCraft Help	Aide de TSCraft
+	TSCAD Help	Aide de TSCAD
 	Cancel	Annuler
 	Cartesian (x, y)	Cartésien (x, y)
 	Center	Centre
@@ -588,7 +588,7 @@
 	Quick Select Properties	Propriétés de la sélection rapide
 	Quick Select...	Sélection rapide...
 	QuickCalc	Calculatrice rapide
-	Quit TSCraft	Quitter TSCraft
+	Quit TSCAD	Quitter TSCAD
 	Radius	Rayon
 	Raster Image	Image raster
 	Ray	Rayon
@@ -995,7 +995,7 @@
 @plural	{n} contributor	{n} contributeur|{n} contributeurs
 	Drawing as bytes	Dessin sous forme d'octets
 	Services	Services
-	Hide TSCraft	Masquer TSCraft
+	Hide TSCAD	Masquer TSCAD
 	Hide Others	Masquer les autres
 	Accessibility	Accessibilité
 	Show System Cursor	Afficher le curseur système
@@ -1010,7 +1010,7 @@
 	Query Texts	Interroger les textes
 	Analyze Shapes	Analyser les formes
 	Check for Updates…	Rechercher des mises à jour…
-	TSCraft is up to date.	TSCraft est à jour.
+	TSCAD is up to date.	TSCAD est à jour.
 	Could not check for updates.	Impossible de rechercher les mises à jour.
 	Find All	Find All
 	Find what:	Find what:
@@ -1024,5 +1024,5 @@
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

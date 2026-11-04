@@ -1,6 +1,6 @@
-# TSCraft Arabic interface catalog — original translations.
+# TSCAD Arabic interface catalog — original translations.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # UTF-8: context<TAB>English source<TAB>Arabic (العربية) translation.
 # Empty context = ordinary label; @plural = zero|one|two|few|many|other forms with {n}.
 # Command IDs, typed keywords, technology/product names and user data stay unchanged.
@@ -39,7 +39,7 @@
 	A drawing opened from a file keeps that file's format.	الرسم المفتوح من ملف يحتفظ بتنسيق ذلك الملف.
 	A variable name starts with a letter and has only letters, digits and _	يبدأ اسم المتغير بحرف ولا يحوي إلا أحرفاً وأرقاماً و _
 	About	حول
-	About TSCraft	حول TSCraft
+	About TSCAD	حول TSCAD
 	Absolute	مطلق
 	Accessibility	إمكانية الوصول
 	Add	إضافة
@@ -116,8 +116,8 @@
 	ByBlock	حسب الكتلة
 	ByColor	حسب اللون
 	ByLayer	حسب الطبقة
-	TSCraft Help	تعليمات TSCraft
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	يحتفظ TSCraft بهذه التفضيلات وأنماط الالتقاط بالكائن ومفاتيح تبديل الرسم لحساب مستخدمك ويعيدها عند بدء التشغيل.
+	TSCAD Help	تعليمات TSCAD
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	يحتفظ TSCAD بهذه التفضيلات وأنماط الالتقاط بالكائن ومفاتيح تبديل الرسم لحساب مستخدمك ويعيدها عند بدء التشغيل.
 	Calibrate	معايرة
 	Calibrate 3D Mouse	معايرة الفأرة ثلاثية الأبعاد
 	Cancel	إلغاء
@@ -424,7 +424,7 @@
 	Hide All	إخفاء الكل
 	Hide All Constraint Bars	إخفاء كل أشرطة القيود
 	Hide All Dynamic Dimensions	إخفاء كل التأشيرات الديناميكية
-	Hide TSCraft	إخفاء TSCraft
+	Hide TSCAD	إخفاء TSCAD
 	Hide Layer List	إخفاء قائمة الطبقات
 	Hide Objects	إخفاء الكائنات
 	Hide Others	إخفاء الطبقات الأخرى
@@ -744,7 +744,7 @@
 	Quick Select...	تحديد سريع...
 	QuickCalc	الحاسبة السريعة
 	QuickCalc Pick	اختيار الحاسبة السريعة
-	Quit TSCraft	إنهاء TSCraft
+	Quit TSCAD	إنهاء TSCAD
 	Radius	نصف القطر
 	Raster Image	صورة نقطية
 	Ray	شعاع
@@ -1235,7 +1235,7 @@ menu	View	عرض
 @plural	{n} commit	{n} إيداع|{n} إيداع|{n} إيداعان|{n} إيداعات|{n} إيداعاً|{n} إيداع
 @plural	{n} contributor	{n} مساهم|{n} مساهم|{n} مساهمان|{n} مساهمين|{n} مساهماً|{n} مساهم
 	Check for Updates…	التحقق من وجود تحديثات…
-	TSCraft is up to date.	TSCraft محدّث.
+	TSCAD is up to date.	TSCAD محدّث.
 	Could not check for updates.	تعذّر التحقق من وجود تحديثات.
 	Add to Working Set	إضافة إلى مجموعة العمل
 	Add: Pick points	إضافة: انتقاء نقاط
@@ -1378,5 +1378,5 @@ menu	View	عرض
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

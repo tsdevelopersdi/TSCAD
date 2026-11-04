@@ -1,6 +1,6 @@
 [package]
 name = "cadcraft-cli"
-description = "CADCraft command-line tool: info, convert, run scripts, export, commands, MCP server"
+description = "TSCAD command-line tool: info, convert, run scripts, export, commands, MCP server"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -11,7 +11,7 @@ name = "cadcraft_cli"
 path = "src/lib.rs"
 
 [[bin]]
-name = "cadcraft-cli"
+name = "tscad-cli"
 path = "src/main.rs"
 
 [lints]
@@ -32,3 +32,6 @@ thiserror = { workspace = true }
 # in the binary.
 clap_complete = { workspace = true }
 clap_mangen = { workspace = true }
+
+[build-dependencies]
+winresource = "0.1"

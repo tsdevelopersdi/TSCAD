@@ -1,6 +1,6 @@
-# TSCraft Turkish interface catalog — original translations by the TSCraft contributors.
+# TSCAD Turkish interface catalog — original translations by the TSCAD contributors.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # Clean room: every entry is written from the plain meaning of the English label in ordinary
 # Turkish computing and technical-drawing vocabulary (Katman, Ölçülendirme, Tarama, Yuvarlatma,
 # Pah, Öteleme, Kırp, Uzat, Nesne Kenetleme, Görünüm Penceresi, Yerleşim). No other product's
@@ -49,7 +49,7 @@
 	A drawing opened from a file keeps that file's format.	Bir dosyadan açılan çizim o dosyanın biçimini korur.
 	A variable name starts with a letter and has only letters, digits and _	Değişken adı bir harfle başlar ve yalnızca harf, rakam ve _ içerir
 	About	Hakkında
-	About TSCraft	TSCraft Hakkında
+	About TSCAD	TSCAD Hakkında
 	Absolute	Mutlak
 	Accessibility	Erişilebilirlik
 	Add	Ekle
@@ -139,9 +139,9 @@
 	ByBlock	BloğaGöre
 	ByColor	RengeGöre
 	ByLayer	KatmanaGöre
-	TSCraft	TSCraft
-	TSCraft Help	TSCraft Yardımı
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft bu tercihleri, nesne kenetleme kiplerini ve çizim seçeneklerini kullanıcı hesabınız için saklar ve açılışta geri yükler.
+	TSCAD	TSCAD
+	TSCAD Help	TSCAD Yardımı
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD bu tercihleri, nesne kenetleme kiplerini ve çizim seçeneklerini kullanıcı hesabınız için saklar ve açılışta geri yükler.
 	Calibrate	Kalibre Et
 	Calibrate 3D Mouse	3B Fareyi Kalibre Et
 	Cancel	İptal
@@ -479,7 +479,7 @@
 	Hide All	Tümünü Gizle
 	Hide All Constraint Bars	Tüm Kısıtlama Çubuklarını Gizle
 	Hide All Dynamic Dimensions	Tüm Dinamik Ölçüleri Gizle
-	Hide TSCraft	TSCraft'ı Gizle
+	Hide TSCAD	TSCAD'ı Gizle
 	Hide Layer List	Katman Listesini Gizle
 	Hide Objects	Nesneleri Gizle
 	Hide Others	Diğerlerini Gizle
@@ -820,7 +820,7 @@
 	Quick Select...	Hızlı Seçim...
 	QuickCalc	Hızlı Hesap
 	QuickCalc Pick	Hızlı Hesap Seçimi
-	Quit TSCraft	TSCraft'tan Çık
+	Quit TSCAD	TSCAD'tan Çık
 	Radius	Yarıçap
 	Raster Image	Raster Görüntü
 	Ray	Işın
@@ -1345,7 +1345,7 @@ menu	Draw	Çiz
 menu	Modify	Değiştir
 menu	View	Görünüm
 	Check for Updates…	Güncellemeleri denetle…
-	TSCraft is up to date.	TSCraft güncel.
+	TSCAD is up to date.	TSCAD güncel.
 	Could not check for updates.	Güncellemeler denetlenemedi.
 	Find All	Find All
 	Find what:	Find what:
@@ -1359,5 +1359,5 @@ menu	View	Görünüm
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

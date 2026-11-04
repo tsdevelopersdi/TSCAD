@@ -1,15 +1,15 @@
 [package]
-name = "tscraft"
-description = "TSCraft desktop app"
+name = "cadcraft"
+description = "TSCAD desktop app"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 rust-version = "1.95"
 publish = false
-default-run = "tscraft"
+default-run = "tscad"
 
 [[bin]]
-name = "tscraft"
+name = "tscad"
 path = "src/main.rs"
 
 [lints]

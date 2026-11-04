@@ -1,6 +1,6 @@
 {
-  "id": "tscraft",
-  "name": "TSCraft",
+  "id": "tscad",
+  "name": "TSCAD",
   "upgradeCode": "119D7D76-0167-4A9E-8F37-09DA0235F68E",
   "sources": [
     "cadcraft.wxs"
@@ -11,43 +11,43 @@
     "UI"
   ],
   "payloads": [
-    "cadcraft-cli.exe",
-    "tscraft.exe"
+    "tscad-cli.exe",
+    "tscad.exe"
   ],
   "registry": [
     [
       "-1",
-      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\tscraft.exe",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\tscad.exe",
       "",
       "[#CadcraftExe]"
     ],
     [
       "-1",
-      "Software\\Classes\\Applications\\tscraft.exe\\shell\\open\\command",
+      "Software\\Classes\\Applications\\tscad.exe\\shell\\open\\command",
       "",
       "\"[#CadcraftExe]\" \"%1\""
     ],
     [
       "-1",
       "Software\\Classes\\.dxf\\OpenWithProgids",
-      "TSCraft.Drawing",
+      "TSCAD.Drawing",
       ""
     ],
     [
       "-1",
       "Software\\Classes\\.dwg\\OpenWithProgids",
-      "TSCraft.Drawing",
+      "TSCAD.Drawing",
       ""
     ],
     [
       "-1",
-      "Software\\Classes\\TSCraft.Drawing\\shell\\open\\command",
+      "Software\\Classes\\TSCAD.Drawing\\shell\\open\\command",
       "",
       "\"[#CadcraftExe]\" \"%1\""
     ],
     [
       "-1",
-      "Software\\Solusi Daya Indonesia\\TSCraft",
+      "Software\\Solusi Daya Indonesia\\TSCAD",
       "DesktopShortcut",
       "1"
     ]

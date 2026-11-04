@@ -15,12 +15,12 @@ static CHOSEN: Mutex<Option<Option<PathBuf>>> = Mutex::new(None);
 pub fn platform(var: impl Fn(&str) -> Option<OsString>) -> Option<PathBuf> {
     let set = |k: &str| var(k).filter(|v| !v.is_empty()).map(PathBuf::from);
     if cfg!(target_os = "macos") {
-        set("HOME").map(|h| h.join("Library/Application Support/TSCraft"))
+        set("HOME").map(|h| h.join("Library/Application Support/TSCAD"))
     } else if cfg!(windows) {
-        set("APPDATA").map(|a| a.join("TSCraft"))
+        set("APPDATA").map(|a| a.join("TSCAD"))
     } else {
         // The XDG spec ignores a relative XDG_CONFIG_HOME.
-        set("XDG_CONFIG_HOME").filter(|p| p.is_absolute()).or_else(|| set("HOME").map(|h| h.join(".config"))).map(|c| c.join("tscraft"))
+        set("XDG_CONFIG_HOME").filter(|p| p.is_absolute()).or_else(|| set("HOME").map(|h| h.join(".config"))).map(|c| c.join("tscad"))
     }
 }
 
@@ -59,16 +59,16 @@ mod tests {
     #[cfg(all(unix, not(target_os = "macos")))]
     #[test]
     fn linux_and_bsd_follow_xdg_config_home() {
-        assert_eq!(platform(env(&[("XDG_CONFIG_HOME", "/x"), ("HOME", "/home/u")])), Some(PathBuf::from("/x/tscraft")));
-        assert_eq!(platform(env(&[("HOME", "/home/u")])), Some(PathBuf::from("/home/u/.config/tscraft")));
+        assert_eq!(platform(env(&[("XDG_CONFIG_HOME", "/x"), ("HOME", "/home/u")])), Some(PathBuf::from("/x/tscad")));
+        assert_eq!(platform(env(&[("HOME", "/home/u")])), Some(PathBuf::from("/home/u/.config/tscad")));
         // The XDG spec says a relative XDG_CONFIG_HOME is ignored.
-        assert_eq!(platform(env(&[("XDG_CONFIG_HOME", "rel"), ("HOME", "/home/u")])), Some(PathBuf::from("/home/u/.config/tscraft")));
+        assert_eq!(platform(env(&[("XDG_CONFIG_HOME", "rel"), ("HOME", "/home/u")])), Some(PathBuf::from("/home/u/.config/tscad")));
     }
 
     #[cfg(target_os = "macos")]
     #[test]
     fn macos_uses_application_support() {
-        assert_eq!(platform(env(&[("HOME", "/Users/u")])), Some(PathBuf::from("/Users/u/Library/Application Support/TSCraft")));
+        assert_eq!(platform(env(&[("HOME", "/Users/u")])), Some(PathBuf::from("/Users/u/Library/Application Support/TSCAD")));
     }
 
     #[cfg(windows)]
@@ -76,7 +76,7 @@ mod tests {
     fn windows_uses_appdata() {
         assert_eq!(
             platform(env(&[("APPDATA", "C:\\Users\\u\\AppData\\Roaming")])),
-            Some(PathBuf::from("C:\\Users\\u\\AppData\\Roaming").join("TSCraft"))
+            Some(PathBuf::from("C:\\Users\\u\\AppData\\Roaming").join("TSCAD"))
         );
     }
 }

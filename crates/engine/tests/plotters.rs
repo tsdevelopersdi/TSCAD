@@ -43,8 +43,8 @@ fn plotted(r: Value) -> Value {
 fn manage_devices() {
     let mut s = session();
     let n = names(&mut s);
-    assert_eq!(n[..3], ["TSCraft PDF", "TSCraft PNG", "TSCraft SVG"], "built-in devices first");
-    let pdf = s.execute("plottermanager", &json!({"action": "get", "name": "tscraft pdf"})).unwrap();
+    assert_eq!(n[..3], ["TSCAD PDF", "TSCAD PNG", "TSCAD SVG"], "built-in devices first");
+    let pdf = s.execute("plottermanager", &json!({"action": "get", "name": "tscad pdf"})).unwrap();
     assert!(pdf["builtin"].as_bool().unwrap());
     let papers = pdf["papers"].as_array().unwrap();
     assert!(papers.iter().any(|p| p["name"] == "ISO B1 (707.00 x 1000.00 MM)"));
@@ -61,8 +61,8 @@ fn manage_devices() {
     assert_eq!(r["resolution"], 150);
     assert!(names(&mut s).contains(&"Office Raster".to_string()));
     assert!(s.execute("plottermanager", &json!({"action": "new", "name": "OFFICE RASTER"})).is_err(), "duplicate");
-    assert!(s.execute("plottermanager", &json!({"action": "set", "name": "TSCraft PDF", "resolution": 100})).is_err(), "built-ins are fixed");
-    assert!(s.execute("plottermanager", &json!({"action": "delete", "name": "TSCraft SVG"})).is_err());
+    assert!(s.execute("plottermanager", &json!({"action": "set", "name": "TSCAD PDF", "resolution": 100})).is_err(), "built-ins are fixed");
+    assert!(s.execute("plottermanager", &json!({"action": "delete", "name": "TSCAD SVG"})).is_err());
     let bad_margins = json!({"name": "x", "width": 100, "height": 100, "margins": [60, 0, 60, 0]});
     assert!(s.execute("plottermanager", &json!({"action": "set", "name": "Office Raster", "paper": bad_margins})).is_err());
 
@@ -98,7 +98,7 @@ fn page_setup_takes_a_device_and_its_papers() {
     assert!(got.iter().zip([10.0, 20.0, 190.0, 580.0]).all(|(a, b)| (a - b).abs() < 1e-9), "{got:?}");
 
     // Switching to a built-in device keeps a paper it has, else takes its default (A4).
-    s.execute("pagesetup", &json!({"layout": "Layout1", "device": "TSCraft PDF"})).unwrap();
+    s.execute("pagesetup", &json!({"layout": "Layout1", "device": "TSCAD PDF"})).unwrap();
     let page = s.doc().unwrap().layout("Layout1").unwrap().page.clone();
     assert_eq!((page.paper.as_str(), page.margins_mm), ("ISO A4 (210.00 x 297.00 MM)", [5.0; 4]));
     s.execute("pagesetup", &json!({"layout": "Layout1", "paper": "A3"})).unwrap();

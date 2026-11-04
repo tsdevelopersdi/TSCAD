@@ -1,6 +1,6 @@
-# TSCraft Swedish interface catalog — original translations by the TSCraft contributors.
+# TSCAD Swedish interface catalog — original translations by the TSCAD contributors.
 # License: MIT OR Apache-2.0 (the repository LICENSE-MIT and LICENSE-APACHE).
-# Written from TSCraft's English strings; no proprietary translations were copied.
+# Written from TSCAD's English strings; no proprietary translations were copied.
 # Clean room: every entry is written from the plain meaning of the English label in ordinary
 # computing vocabulary. No other product's Swedish interface, string table or terminology
 # database was consulted, and no other catalog is used as a source.
@@ -34,7 +34,7 @@
 	A drawing opened from a file keeps that file's format.	En ritning som öppnats från en fil behåller filens format.
 	A variable name starts with a letter and has only letters, digits and _	Ett variabelnamn börjar med en bokstav och innehåller bara bokstäver, siffror och _
 	About	Om
-	About TSCraft	Om TSCraft
+	About TSCAD	Om TSCAD
 	Absolute	Absolut
 	Add Current Scale	Lägg till aktuell skala
 	Add Leader	Lägg till hänvisningslinje
@@ -110,9 +110,9 @@
 	ByBlock	Enligt block
 	ByColor	Enligt färg
 	ByLayer	Enligt lager
-	TSCraft	TSCraft
-	TSCraft Help	Hjälp för TSCraft
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft sparar de här inställningarna, objektfästena och ritlägena för ditt användarkonto och återställer dem när programmet startar.
+	TSCAD	TSCAD
+	TSCAD Help	Hjälp för TSCAD
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD sparar de här inställningarna, objektfästena och ritlägena för ditt användarkonto och återställer dem när programmet startar.
 	Cancel	Avbryt
 	Cartesian (x, y)	Kartesisk (x, y)
 	Center	Centrum
@@ -795,7 +795,7 @@
 	Quick Select Properties	Egenskaper för snabbmarkering
 	Quick Select...	Snabbmarkering...
 	QuickCalc	Snabbkalkyl
-	Quit TSCraft	Avsluta TSCraft
+	Quit TSCAD	Avsluta TSCAD
 	Radius	Radie
 	Raster Image	Rasterbild
 	Ray	Stråle
@@ -1213,7 +1213,7 @@
 @plural	{n} contributor	{n} bidragsgivare|{n} bidragsgivare
 	Drawing as bytes	Ritningen som byte
 	Services	Tjänster
-	Hide TSCraft	Dölj TSCraft
+	Hide TSCAD	Dölj TSCAD
 	Hide Others	Dölj övriga
 	Accessibility	Tillgänglighet
 	Show System Cursor	Visa systemets muspekare
@@ -1443,7 +1443,7 @@ menu	Modify	Ändra
 	Yards	Yard
 	Your changes will be lost if you don't save them.	Dina ändringar går förlorade om du inte sparar dem.
 	Check for Updates…	Sök efter uppdateringar…
-	TSCraft is up to date.	TSCraft är uppdaterat.
+	TSCAD is up to date.	TSCAD är uppdaterat.
 	Could not check for updates.	Det gick inte att söka efter uppdateringar.
 	Find All	Find All
 	Find what:	Find what:
@@ -1457,5 +1457,5 @@ menu	Modify	Ändra
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.

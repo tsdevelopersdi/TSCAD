@@ -126,9 +126,9 @@ const MAX_DEVICES: usize = 1000;
 
 /// The built-in devices: name, output, description.
 const BUILTIN: [(&str, PlotOutput, &str); 3] = [
-    ("TSCraft PDF", PlotOutput::Pdf, "Vector PDF"),
-    ("TSCraft PNG", PlotOutput::Png, "Raster PNG image"),
-    ("TSCraft SVG", PlotOutput::Svg, "Vector SVG image"),
+    ("TSCAD PDF", PlotOutput::Pdf, "Vector PDF"),
+    ("TSCAD PNG", PlotOutput::Png, "Raster PNG image"),
+    ("TSCAD SVG", PlotOutput::Svg, "Vector SVG image"),
 ];
 
 /// A page setup's "no device" name.
@@ -540,7 +540,7 @@ fn run_plottermanager(_s: &mut Session, p: &Value) -> Result<Value> {
                         Some(o) => o.as_str().and_then(PlotOutput::parse).ok_or_else(|| bad(cmd, "`output` must be pdf, png or svg"))?,
                         None => PlotOutput::Pdf,
                     };
-                    let (b, o, _) = BUILTIN.iter().find(|(_, o, _)| *o == output).copied().unwrap_or(("TSCraft PDF", PlotOutput::Pdf, ""));
+                    let (b, o, _) = BUILTIN.iter().find(|(_, o, _)| *o == output).copied().unwrap_or(("TSCAD PDF", PlotOutput::Pdf, ""));
                     builtin(b, o, "")
                 }
             };

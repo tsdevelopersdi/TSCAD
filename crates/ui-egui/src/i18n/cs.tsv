@@ -1,6 +1,6 @@
-# TSCraft Czech interface catalog — original translations by @Losminek (AI-assisted).
+# TSCAD Czech interface catalog — original translations by @Losminek (AI-assisted).
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# Written from the meaning of TSCraft English strings; no proprietary translations copied.
+# Written from the meaning of TSCAD English strings; no proprietary translations copied.
 # UTF-8: context<TAB>English source<TAB>Czech translation.
 # @plural = one|few|other forms for integer counts.
 	Apply	Použít
@@ -50,7 +50,7 @@
 	> Greater than	> Větší než
 	A variable name starts with a letter and has only letters, digits and _	Název proměnné začíná písmenem a obsahuje pouze písmena, číslice a _
 	About	O aplikaci
-	About TSCraft	O aplikaci TSCraft
+	About TSCAD	O aplikaci TSCAD
 	Absolute	Absolutní
 	Add Leader	Přidat odkaz
 	Additional angles	Další úhly
@@ -112,7 +112,7 @@
 	ByBlock	Dle bloku
 	ByColor	Dle barvy
 	ByLayer	Dle hladiny
-	TSCraft Help	Nápověda TSCraft
+	TSCAD Help	Nápověda TSCAD
 	Cancel	Zrušit
 	Cartesian (x, y)	Kartézské (x, y)
 	Center	Střed
@@ -697,7 +697,7 @@
 	Quick Select...	Rychlý výběr...
 	QuickCalc	Rychlá kalkulačka
 	QuickCalc Pick	Výběr pro rychlou kalkulačku
-	Quit TSCraft	Ukončit TSCraft
+	Quit TSCAD	Ukončit TSCAD
 	Radius	Poloměr
 	Raster Image	Rastrový obrázek
 	Ray	Polopřímka
@@ -928,7 +928,7 @@
 	Specify insertion point	Určete bod vložení
 	A drawing opened from a file keeps that file's format.	Výkres otevřený ze souboru si zachová formát tohoto souboru.
 	An array that would create more objects than this is refused.	Pole překračující tento počet objektů bude odmítnuto.
-	TSCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCraft ukládá tyto předvolby, režimy uchopení objektu a přepínače kreslení pro váš uživatelský účet a obnovuje je při spuštění.
+	TSCAD keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	TSCAD ukládá tyto předvolby, režimy uchopení objektu a přepínače kreslení pro váš uživatelský účet a obnovuje je při spuštění.
 	Changes apply at once and are kept for next time.	Změny se projeví okamžitě a uloží se pro příště.
 	Command line history	Historie příkazového řádku
 	Copy as JSON	Kopírovat jako JSON
@@ -1174,7 +1174,7 @@
 @plural	{n} contributor	{n} přispěvatel|{n} přispěvatelé|{n} přispěvatelů
 	Drawing as bytes	Výkres jako bajty
 	Services	Služby
-	Hide TSCraft	Skrýt TSCraft
+	Hide TSCAD	Skrýt TSCAD
 	Hide Others	Skrýt ostatní
 	Accessibility	Zpřístupnění
 	Show System Cursor	Zobrazit systémový kurzor
@@ -1208,7 +1208,7 @@
 	X	X
 	Y	Y
 	B	B
-	TSCraft	TSCraft
+	TSCAD	TSCAD
 	More toolbar commands	Další příkazy panelu nástrojů
 menu	View	Zobrazení
 menu	Draw	Kreslení
@@ -1220,7 +1220,7 @@ menu	Modify	Modifikace
 	Query Texts	Dotaz na texty
 	Analyze Shapes	Analyzovat tvary
 	Check for Updates…	Zkontrolovat aktualizace…
-	TSCraft is up to date.	TSCraft je aktuální.
+	TSCAD is up to date.	TSCAD je aktuální.
 	Could not check for updates.	Aktualizace se nepodařilo zkontrolovat.
 	Find All	Find All
 	Find what:	Find what:
@@ -1234,5 +1234,5 @@ menu	Modify	Modifikace
 	Text to find	Text to find
 	Whole words	Whole words
 	Nothing found	Nothing found
-	Welcome to TSCraft	Welcome to TSCraft
-	Files you open in TSCraft appear here.	Files you open in TSCraft appear here.
+	Welcome to TSCAD	Welcome to TSCAD
+	Files you open in TSCAD appear here.	Files you open in TSCAD appear here.
