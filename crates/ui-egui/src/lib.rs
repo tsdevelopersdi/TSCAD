@@ -10,12 +10,19 @@
 
 /// TSCAD as craft-update knows it, with its 128 px icon and accent colour: the update
 /// prompt shows both, and an AppImage's menu entry gets the icon.
+///
+/// Updates come from Tech Services SDI's own releases (`tsdevelopersdi/TSCAD`), never from the
+/// upstream repository: assets are `tscad-<version>-<os>-<arch>.<ext>` plus `SHA256SUMS.txt`, as
+/// `packaging/windows/package.ps1` builds them. No former ids or names, so an upstream install on
+/// the same machine is never taken for this app.
 #[cfg(not(target_arch = "wasm32"))]
 pub const UPDATE_APP: craft_update::app::App = craft_update::app::App {
     id: "tscad",
     name: "TSCAD",
     developer: "Solusi Daya Indonesia",
-    repo: "SolusiDayaIndonesia/tscad",
+    repo: "tsdevelopersdi/TSCAD",
+    former_ids: &[],
+    former_names: &[],
     icon_png: Some(include_bytes!("../../../assets/app-icon/hicolor/128x128/apps/ai.storyteller.cadcraft.png")),
     accent: Some([0x3e, 0xa6, 0xe8]),
     ..craft_update::suite::CADCRAFT
@@ -1204,5 +1211,17 @@ mod tests {
         assert_eq!(SaveFormat::Dwg.suggested_name(Some("  ")), "Drawing.dwg");
         let ui: UiState = serde_json::from_value(json!({ "saveFormat": "dwg" })).unwrap_or_default();
         assert_eq!(ui.save_format, SaveFormat::Dwg);
+    }
+}
+/// Updates come only from Tech Services SDI's repository, under this app's own asset names, so an
+/// upstream merge can't quietly point users back at the upstream releases.
+#[cfg(all(test, not(target_arch = "wasm32")))]
+mod ts_update_source {
+    #[test]
+    fn updates_come_from_the_ts_repository() {
+        let app = &super::UPDATE_APP;
+        assert_eq!(app.repo, "tsdevelopersdi/TSCAD");
+        assert_eq!(app.id, "tscad");
+        assert!(app.former_ids.is_empty() && app.former_names.is_empty());
     }
 }
